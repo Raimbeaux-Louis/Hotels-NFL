@@ -1,0 +1,28 @@
+
+/* Full-width inputs */
+input[type=text] {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: green;
+    border: 1px green;
+}
+
+
