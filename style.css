@@ -1,7 +1,93 @@
 
+/* Menu deroulant*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: blue;
+    opacity: 0.8;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 9.5%;
+    text-align: center;
+    position: right;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color:white; /* colors titre menu*/
+    border-bottom: 0px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: white;
+    border-bottom: 2px solid rgb(0, 0, 8); /*color bande menu */
+}
+
+h1{
+    color: white;
+    font-size: 10px;
+}
+
+h2{
+    text-decoration: underline;
+    color: darkblue;
+}
+
+h3{
+    text-decoration: bold;
+    color:blue;
+}
+
+
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+
+
+}
+/* Bordered form */
+form {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-family: Calibri;
+    color: #3f48cc;
+}
+
 /* Full-width inputs */
-input[type=text] {
-    width: 15%;
+input[type=email], input[type=password] {
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -11,18 +97,16 @@ input[type=text] {
 
 /* Set a style for all buttons */
 input[type=submit] {
-    background-color: green;
+    background-color: red;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 15%;
+    width: 100%;
 }
 input[type=submit]:hover {
     background-color: white;
-    color: green;
-    border: 1px green;
+    color: red;
+    border: 1px solid red;
 }
-
-

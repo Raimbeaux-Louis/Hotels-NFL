@@ -13,7 +13,7 @@
 
 <?php
 try {
-    $bdd = new PDO('mysql:host=localhost;dbname=hotels;charset=utf8', 'root', 'root');
+    $bdd = new PDO('mysql:host=localhost;dbname=hotels;charset=utf8', 'root', 'toro');
     array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 }
 catch(Exception $e)
@@ -29,14 +29,14 @@ catch(Exception $e)
 
 <div id="container">
 
-    <form action="verif.php" method="POST">
+    <form action="#" method="POST">
         <h1>Connexion</h1>
 
         <input type="email" placeholder="Entrer votre email" name="email" required>
 
         <input type="password" placeholder="Entrer le mot de passe" name="password" required>
 
-        <input type="submit" id='submit' value='Se connecter' >
+        <input type="submit" id='submit' value='Se connecter'> <a href="chambres.php"></a>
         <?php
         if(isset($_GET['erreur'])){
             $err = $_GET['erreur'];
