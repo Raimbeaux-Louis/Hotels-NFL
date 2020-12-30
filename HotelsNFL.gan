@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Hotel" company="NFL" webLink="http://" view-date="2020-12-10" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.11" locale="fr">
+    <description><![CDATA[Gestion chambres Hotel NFL ]]></description>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="167" order="0"/>
+        <field id="tpd4" name="Date de début" width="65" order="1"/>
+        <field id="tpd5" name="Date de fin" width="64" order="2"/>
+        <timeline><![CDATA[0,26,2,21,15,23,5]]></timeline>
+        <option id="color.recent"><![CDATA[#cc00cc #ff66ff #ff6633 #cc0033 #ff3333 #33ffff #33ccff #33ff00 #3366ff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="MCD" color="#3366ff" shape="0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0" meeting="false" start="2020-12-14" duration="1" complete="0" thirdDate="2020-12-16" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="Base de données" color="#33ffff" shape="0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0" meeting="false" start="2020-12-14" duration="1" complete="0" thirdDate="2020-12-09" thirdDate-constraint="0" expand="true"/>
+        <task id="5" name="Début codage projet" color="#33ccff" shape="0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0" meeting="false" start="2020-12-14" duration="1" complete="0" thirdDate="2020-12-09" thirdDate-constraint="0" expand="true"/>
+        <task id="15" name="Diagramme Gantt" color="#ff3333" shape="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1" meeting="false" start="2020-12-16" duration="1" complete="0" thirdDate="2020-12-09" thirdDate-constraint="0" expand="true"/>
+        <task id="21" name="Page web &quot;Connexion&quot;" color="#cc0033" shape="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1" meeting="false" start="2020-12-16" duration="1" complete="0" thirdDate="2020-12-09" thirdDate-constraint="0" expand="true"/>
+        <task id="23" name="Liaisons base de données / page web" color="#ff6633" shape="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1" meeting="false" start="2020-12-16" duration="1" complete="0" thirdDate="2020-12-09" thirdDate-constraint="0" expand="true"/>
+        <task id="26" name="Poursuite et fin développement site" color="#ff66ff" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2020-12-17" duration="1" complete="0" thirdDate="2020-12-09" thirdDate-constraint="0" expand="true"/>
+        <task id="28" name="Design / Mise en page du site" color="#cc00cc" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2020-12-17" duration="1" complete="0" thirdDate="2020-12-09" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Noah " function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="2" name="Felix" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="3" name="Louis" function="SoftwareDevelopment:2" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="2" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="26" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="26" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
